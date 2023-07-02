@@ -40,19 +40,19 @@ In 'Bloglar' pages you can see Our Blogs, last added 3 blogs and last added 5 co
 In 'İletişim' pages you can write email or send your requests, suggestions and complaints to Admin.
 
 
-## Website Photos
+## Website Photos Url
 
-![Uygulama Ekran Görüntüsü](https://img.imgyukle.com/2023/07/02/rsaofq.png)
+https://img.imgyukle.com/2023/07/02/rsaofq.png
 
-![Uygulama Ekran Görüntüsü](https://img.imgyukle.com/2023/07/02/rsaRuY.png)
+https://img.imgyukle.com/2023/07/02/rsaRuY.png
 
-![Uygulama Ekran Görüntüsü](https://img.imgyukle.com/2023/07/02/rsY7eR.png)
+https://img.imgyukle.com/2023/07/02/rsY7eR.png
 
-![Uygulama Ekran Görüntüsü](https://img.imgyukle.com/2023/07/02/rsYdPe.png)
+https://img.imgyukle.com/2023/07/02/rsYdPe.png
 
-![Uygulama Ekran Görüntüsü](https://img.imgyukle.com/2023/07/02/rsaPaN.png)
+https://img.imgyukle.com/2023/07/02/rsaPaN.png
 
-![Uygulama Ekran Görüntüsü](https://img.imgyukle.com/2023/07/02/rsY0Xc.png)
+https://img.imgyukle.com/2023/07/02/rsY0Xc.png
 
-![Uygulama Ekran Görüntüsü](https://img.imgyukle.com/2023/07/02/rsak1P.png)
+https://img.imgyukle.com/2023/07/02/rsak1P.png
   
