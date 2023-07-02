@@ -40,6 +40,3 @@ namespace TravelTripProject.Controllers
     }
 }
 
-// Contact/Index tasarımına bak.
-// haritaya bişey yap abi.
-// Admin Paneline Contacti ekle.
