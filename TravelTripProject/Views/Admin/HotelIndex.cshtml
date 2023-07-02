@@ -1,0 +1,55 @@
+﻿@using TravelTripProject.Models.Classes
+@model List<Hotel>
+@{
+    ViewBag.Title = "HotelIndex";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .table th,
+        .table td {
+            padding: 8px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        .table thead th {
+            background-color: #f8f9fa;
+            color: #333;
+            font-weight: bold;
+        }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #f8f9fa;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f1f3f5;
+    }
+</style>
+<h2>Otel Listesi</h2>
+
+<table class="table table-bordered table-striped table-hover">
+    <tr>
+        <th>ID</th>
+        <th>BAŞLIK</th>
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+        <th>DETAYLAR</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.Id</td>
+            <td>@x.Name</td>
+            <td><a href="/Admin/DeleteHotel/@x.Id" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Admin/TakeHotel/@x.Id" class="btn btn-warning">Güncelle</a></td>
+            <td><a href="/Hotel/HotelDetail/@x.Id" class="btn btn-secondary">Detaylar</a></td>
+        </tr>
+    }
+</table>
+<a href="/Admin/NewHotel/" class="btn btn-primary">Yeni Otel</a>

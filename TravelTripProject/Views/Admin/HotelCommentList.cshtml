@@ -1,0 +1,65 @@
+﻿@using TravelTripProject.Models.Classes
+@model List<CommentHotel>
+@{
+    ViewBag.Title = "HotelCommentList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<style>
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .table th,
+        .table td {
+            padding: 8px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        .table thead th {
+            background-color: #f8f9fa;
+            color: #333;
+            font-weight: bold;
+        }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #f8f9fa;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f1f3f5;
+    }
+</style>
+
+<h2>Yorum Listesi</h2>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr>
+                <th style="width: 10%">ID</th>
+                <th style="width: 20%">Kulanıcı Adı</th>
+                <th style="width: 20%">Mail</th>
+                <th style="width: 30%">Yorum</th>
+                <th>Sil</th>
+                <th>Güncelle</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var x in Model)
+            {
+                <tr>
+                    <td>@x.Id</td>
+                    <td>@x.UserName</td>
+                    <td>@x.Mail</td>
+                    <td>@x.Comment</td>
+                    <td><a href="/Admin/DeleteHotelComment/@x.Id" class="btn btn-danger">Sil</a></td>
+                    <td><a href="/Admin/TakeHotelComment/@x.Id" class="btn btn-warning">Güncelle</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

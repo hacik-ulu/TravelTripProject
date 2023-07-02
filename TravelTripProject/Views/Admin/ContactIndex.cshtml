@@ -1,0 +1,61 @@
+﻿@using TravelTripProject.Models.Classes
+@model List<Contact>
+
+@{
+    ViewBag.Title = "ContactIndex";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<style>
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .table th,
+        .table td {
+            padding: 8px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        .table thead th {
+            background-color: #f8f9fa;
+            color: #333;
+            font-weight: bold;
+        }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #f8f9fa;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f1f3f5;
+    }
+</style>
+
+<h2>Website Yorum Paneli</h2>
+<br />
+<table class="table table-bordered table-striped table-hover">
+    <tr>
+        <th><span class="normal-text">ID</span></th>
+        <th><span class="normal-text">Ad</span></th>
+        <th><span class="normal-text">Mail</span></th>
+        <th><span class="normal-text">Yorum-Mesaj</span></th>
+        <th><span class="normal-text">Sil</span></th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.Id</td>
+            <td>@x.UserName</td>
+            <td>@x.Mail</td>
+            <td>@x.Message</td>
+            <td><a href="/Admin/DeleteWebsiteComment/@x.Id" class="btn btn-danger">Sil</a></td>
+
+
+        </tr>
+    }
+</table>
+
+

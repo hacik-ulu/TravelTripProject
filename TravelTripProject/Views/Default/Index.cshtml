@@ -1,0 +1,60 @@
+﻿@using TravelTripProject.Models.Classes
+@model List<Blog>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<body>
+    <div class="header-banner">
+        <div class="wrap">
+            <div class="banner">
+                <div class="header_bottom_right_images" style="text-align: center;">
+                    <div class="slider" style="display: inline-block;">
+                        <ul class="rslides" id="slider1">
+                            @foreach (var a in Model)
+                            {
+                                <li style="display: inline-block; text-align: center;"><img src="@a.BlogImage" alt=""></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class"content">
+        <div class="wrap">
+            <div class="wrapper">
+                <div class="con-top">
+                    <h3>Tatil Seyahat Websitesine Hoşgeldiniz!</h3>
+                    <p style="font-size: 14px;">
+                        Bu websitede Anasayfa, Hakkımızda, Oteller, Blog ve iletişim panelleri bulunmaktadır.
+                        Websitemizin oluşturulma amacı seyahat ya da tatil yapmak isteyen kişilere öneri, bilgi ve kullanıcı yorumlarını sunmaktır.
+                        Websitede bulunan bilgiler ışığında Tatil Noktaları, Oteller ve Restoranların bilgileri kullanıcıların takdirine sunulmuştur.
+                        Böylelikle bilgilendirici bir tatil/seyahat blog websitesi oluşturulmuştur.
+                    </p>
+                </div>
+                @Html.Action("Partial1", "Default")
+                <div class="grids">
+                    <div class="box1">
+                        @Html.Action("Partial3", "Default")
+                        @Html.Action("Partial4", "Default")
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

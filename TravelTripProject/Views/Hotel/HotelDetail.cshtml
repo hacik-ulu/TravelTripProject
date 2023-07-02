@@ -1,0 +1,64 @@
+﻿@model TravelTripProject.Models.Classes.HotelComment
+
+@{
+    ViewBag.Title = "HotelDetail";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Personal Blog a Blogging Category Flat Bootstarp  Responsive Website Template | Single :: w3layouts</title>
+    <link href="~/web2/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="~/web2/css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Personal Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <link href='https://fonts.googleapis.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <div class="single">
+        <div class="container">
+            <div class="col-md-8 single-main">
+                <div class="single-grid">
+                    @foreach (var x in Model.Value1)
+                    {
+                        <img src="@x.PhotoUrl" alt="" style="margin-bottom:20px" />
+                        <h3>@x.Name</h3>
+                        <p>
+                            @x.Description
+                        </p>
+                        <div class="price-label">
+                            <span>Otel Konaklama Ücreti</span>
+                        </div>
+                        <div class="price-value">
+                            <span>$@x.AveragePrice</span>
+                        </div>
+                    }
+                </div>
+                @foreach (var y in Model.Value2)
+                {
+                    <ul class="comment-list">
+                        <li>
+                            <img src="~/web2/images/avatar.png" class="img-responsive" alt="">
+                            <div class="desc">
+                                <p>@y.UserName: @y.Comment</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>
+                }
+                <br /><br />
+                @Html.Action("DoCommentHotel", "Hotel")
+                <br /><br />
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</body>
+</html>

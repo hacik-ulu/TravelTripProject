@@ -1,0 +1,29 @@
+﻿@using TravelTripProject.Models.Classes
+@model List<About>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<style>
+    .about img {
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+
+<div class="content">
+    <div class="wrap">
+        <div class="about">
+            <h3>Hakkımızda</h3>
+            <br />
+            @foreach (var x in Model)
+            {
+                <img src="@x.PhotoUrl" alt="Resim" width="700" height="400" />
+                <br /><br />
+                <p style="text-align: center; font-size: 24px; font-weight: bold;"><strong>@x.Description</strong></p>
+            }
+        </div>
+    </div>
+</div>

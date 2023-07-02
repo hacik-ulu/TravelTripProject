@@ -1,0 +1,86 @@
+﻿@model TravelTripProject.Models.Classes.Contact
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+@*@if (@TempData["AlertMessage"] != null)
+{
+    <div class="alert alert-success" style="display: inline-block; margin-bottom: 10px;">
+        <strong>Başarılı!</strong> @TempData["AlertMessage"]
+    </div>
+}*@
+<br />
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Free Easy-Trip Website Template | Contact :: w3layouts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    @*<link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />*@
+    <link href='https://fonts.googleapis.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="contact">
+        <div class="wrap">
+            <div class="contact-top">
+                <h3 style="font-size: 26px; font-family: 'Oswald', Arial, sans-serif;">Bize Ulaşmak İstiyorsanız</h3>
+                <p style="font-size: 20px; font-family: 'Oswald', Arial, sans-serif;">Herhangi öneri, istek ya da şikayet durumunda aşağıdaki kanallardan bizlere ulaşabilirsiniz.</p>
+            </div>
+            <div class="form">
+                @using (Html.BeginForm("Create", "Contact", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div>
+                        @Html.TextBoxFor(m => m.UserName, new { placeholder = "Ad Soyad:" })
+                    </div>
+                    <div>
+                        @Html.TextBoxFor(m => m.Mail, new { placeholder = "Mail:" })
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                        @Html.TextAreaFor(m => m.Message, new { placeholder = "Mesaj:", style = "height: 12.50em; width: 200%; resize: none;" })
+
+                    </div><br />
+                    <div>
+                        <input type="submit" value="Gönder">
+                        @if (@TempData["AlertMessage"] != null)
+                        {
+                            <span style="font-size: 18px; font-family: 'Oswald', Arial, sans-serif; color: black; margin-left: 10px;">
+                                Mesajınız başarıyla gönderildi!
+                            </span>
+                        }
+                    </div>
+                }
+            </div>
+            <div class="clear"></div>
+            <div class="contact-bottom">
+                <div class="contact-left">
+                    <div class="contact-add">
+                        <h3 style="font-size: 22px; font-family: 'Oswald', Arial, sans-serif;">İletişim Bilgileri</h3>
+                        <p style="font-size: 18px; font-family: 'Oswald', Arial, sans-serif;">Email: <a href="mailto:infossample@gmail.com">infossample@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>

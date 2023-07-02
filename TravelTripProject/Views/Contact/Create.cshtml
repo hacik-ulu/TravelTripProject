@@ -1,0 +1,70 @@
+﻿@model TravelTripProject.Models.Classes.Contact
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Free Easy-Trip Website Template | Contact :: w3layouts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="contact">
+        <div class="wrap">
+            <div class="contact-top">
+                <h3>Bizlere Ulaşmak İstiyorsanız</h3>
+                <p>Herhangi bir öneri, istek ya da şikayet durumunda aşağıdaki kanallardan bizlere ulaşabilirsiniz.</p>
+            </div>
+            <div class="form">
+
+                @using (Html.BeginForm("Create", "Contact", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div>
+                        @Html.TextBoxFor(m => m.UserName, new { placeholder = "Ad Soyad:" })
+                    </div>
+                    <div>
+                        @Html.TextBoxFor(m => m.Mail, new { placeholder = "Mail:" })
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                        @Html.TextAreaFor(m => m.Message, new { placeholder = "Mesaj:" })
+                    </div>
+                    <div>
+                        <input type="submit" value="Gönder">
+                    </div>
+                }
+            </div>
+            @*<div class="form1">
+                <div>
+                    <textarea name="message" placeholder="Mesajınız"></textarea>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="contact-bottom">
+                <div class="contact-left">
+                    <div class="contact-add">
+                        <h3>İletişim Bilgileri</h3>
+                        <p>Email: <a href="mailto:infossample@gmail.com">infossample@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe width="580" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Rashelle+Way,+San+Ramon,+CA,+United+States&amp;aq=0&amp;oq=rash&amp;sll=44.308127,-111.75293&amp;sspn=22.280521,53.569336&amp;ie=UTF8&amp;hq=&amp;hnear=Rashelle+Way,+San+Ramon,+Contra+Costa,+California+94582,+United+States&amp;ll=37.768294,-121.922369&amp;spn=0.001503,0.00327&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br><small><a href="http://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Rashelle+Way,+San+Ramon,+CA,+United+States&amp;aq=0&amp;oq=rash&amp;sll=44.308127,-111.75293&amp;sspn=22.280521,53.569336&amp;ie=UTF8&amp;hq=&amp;hnear=Rashelle+Way,+San+Ramon,+Contra+Costa,+California+94582,+United+States&amp;ll=37.768294,-121.922369&amp;spn=0.001503,0.00327&amp;t=m&amp;z=14&amp;iwloc=A" style="color: #555;text-align:left">View Larger Map</a></small>
+                </div>
+                <div class="clear"></div>
+            </div>*@
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+@*//Create.cshtml tasarımını düzenle(yorum gönderirken)
+//Admin Panelinde contact yorumlarını görüntüle
+//Harita ayarla*@
