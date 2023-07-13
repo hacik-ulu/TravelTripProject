@@ -40,19 +40,24 @@ In 'Bloglar' pages you can see Our Blogs, last added 3 blogs and last added 5 co
 In 'İletişim' pages you can write email or send your requests, suggestions and complaints to Admin.
 
 
-## Website Photos Url
+## Website Photos
+![AnaSayfa(2)](https://github.com/hacik-ulu/TravelTripProject/assets/116976072/6167b2af-32d3-461f-9ba9-5d91f234aa3d)
 
-https://img.imgyukle.com/2023/07/02/rsaofq.png
+![AnaSayfa(1)](https://github.com/hacik-ulu/TravelTripProject/assets/116976072/1024b963-c5e0-4024-9103-47daf28934ba)
 
-https://img.imgyukle.com/2023/07/02/rsaRuY.png
+![Bloglar](https://github.com/hacik-ulu/TravelTripProject/assets/116976072/e98c3b17-feb6-4811-8725-1d78d0637988)
 
-https://img.imgyukle.com/2023/07/02/rsY7eR.png
+![Oteller(1)](https://github.com/hacik-ulu/TravelTripProject/assets/116976072/8658943f-f5a3-48c1-a0a4-9973e56e3066)
 
-https://img.imgyukle.com/2023/07/02/rsYdPe.png
+![Otel(2)](https://github.com/hacik-ulu/TravelTripProject/assets/116976072/baac35cc-1fd6-4d07-9b74-5ce661dcb384)
 
-https://img.imgyukle.com/2023/07/02/rsaPaN.png
+![İletişim](https://github.com/hacik-ulu/TravelTripProject/assets/116976072/5c092cdc-a541-4ef6-9c52-31a5a9481d2d)
 
-https://img.imgyukle.com/2023/07/02/rsY0Xc.png
+![Hakkımızda](https://github.com/hacik-ulu/TravelTripProject/assets/116976072/cde50864-3986-45bf-acad-2b71a45f828e)
 
-https://img.imgyukle.com/2023/07/02/rsak1P.png
+![AdminGirişPaneli](https://github.com/hacik-ulu/TravelTripProject/assets/116976072/3b8e6b72-7d26-4799-8eb2-7e039eeb1565)
+
+![AdminYorumPaneli](https://github.com/hacik-ulu/TravelTripProject/assets/116976072/e8f43543-092e-4176-bf4c-d3144284b04e)
+
+![AdminYorumGüncelleme](https://github.com/hacik-ulu/TravelTripProject/assets/116976072/089e4ec8-9b85-4c3c-91c9-dfbb598cadb8)
   
