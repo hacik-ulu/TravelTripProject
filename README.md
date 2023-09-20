@@ -1,46 +1,46 @@
 
 # Travel Trip Project
-
-This project is about to create a website using Mvc technologhy. 
-
+Bu proje, Mvc teknolojisi kullanarak bir web sitesi oluşturmayı amaçlamaktadır.
 
 
-## Folders
-Controller - It includes About.cs, Admin.cs, AdressBlog.cs, Blog.cs, BlogComment.cs, Comment.cs, CommentHotel.cs, Contact.cs, Home.cs, Hotel.cs, HotelComment.cs and TravelTripContext.cs. All controllers have 'CRUD' and partialview operations.
 
-Views - It includes Index and pages about base 'CRUD' operations. And It has same pages about Comment, PartialView, TakeHotel/Blog/Comment to view related pages.
 
-Contents - It includes bootstarp additions.
+## Klasörler
+Controller - İçerisinde About.cs, Admin.cs, AdressBlog.cs, Blog.cs, BlogComment.cs, Comment.cs, CommentHotel.cs, Contact.cs, Home.cs, Hotel.cs, HotelComment.cs ve TravelTripContext.cs dosyalarını içerir. Tüm denetleyiciler 'CRUD' ve partialview işlemlerini içerir.
 
-Login - It includes login master page to verify that user wants to access Admin Panel who is a real Admin.
+Views - Temel 'CRUD' işlemleri hakkında Index ve sayfaları içerir. Ayrıca Comment, PartialView, TakeHotel/Blog/Comment ile ilgili sayfaları görüntülemek için aynı sayfalara sahiptir.
 
-Models/Classes - It includes database tables. 
+Contents - Bootstrap eklentilerini içerir.
 
-Shared - It includes _TestLayout to be able to add the fixed parts to each page and _AdminLayout to edit AdminPanel fixed parts.
+Login - Gerçek bir Adminye erişmek isteyen kullanıcının kimliğini doğrulamak için giriş ana sayfasını içerir.
 
-web and web2 - It includes website themes.
+Modeller/Sınıflar - Veritabanı tablolarını içerir.
+
+Shared - Her sayfaya sabit bölümler eklemek için _TestLayout ve Admin Paneli sabit bölümlerini düzenlemek için _AdminLayout içerir.
+
+web ve web2 - Web sitesi temalarını içerir.
 
 
 ## Domain
+Alan adı SOMEE.com web sitesinden alınmıştır.
 
-Domain is used from SOMEE.com website.
 ## Website Url
-
-You can access from http://tatilseyahatrotasi.somee.com
-## Information About Website
-
-In 'Ana Sayfa' pages you can see photo about Blog and some partialviews about our blogs.
-
-In 'Hakkımızda' pages you can see the subtructure technologhy while creating the website.
-
-In 'Oteller' pages you can see Our Hotels, last added 3 hotels and last added 5 comments.
-
-In 'Bloglar' pages you can see Our Blogs, last added 3 blogs and last added 5 comments.
-
-In 'İletişim' pages you can write email or send your requests, suggestions and complaints to Admin.
+Websitesine http://tatilseyahatrotasi.somee.com adresinden erişebilirsiniz.
 
 
-## Website Photos
+## Website Hakkında Bilgiler
+'Ana Sayfa' sayfalarında Bloglarımız hakkında fotoğrafları ve bazı partial görünümleri görebilirsiniz.
+
+'Hakkımızda' sayfalarında web sitesini oluştururken kullanılan altyapı teknolojilerini görebilirsiniz.
+
+'Oteller' sayfalarında Otellerimizi, son eklenen 3 oteli ve son eklenen 5 yorumu görebilirsiniz.
+
+'Bloglar' sayfalarında Bloglarımızı, son eklenen 3 blogu ve son eklenen 5 yorumu görebilirsiniz.
+
+'İletişim' sayfalarında e-posta yazabilir veya taleplerinizi, önerilerinizi ve şikayetlerinizi Admine iletebilirsiniz.
+
+
+## Website Görüntüleri
 ![AnaSayfa(2)](https://github.com/hacik-ulu/TravelTripProject/assets/116976072/6167b2af-32d3-461f-9ba9-5d91f234aa3d)
 
 ![AnaSayfa(1)](https://github.com/hacik-ulu/TravelTripProject/assets/116976072/1024b963-c5e0-4024-9103-47daf28934ba)
