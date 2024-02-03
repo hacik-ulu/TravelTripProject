@@ -21,13 +21,6 @@ Shared - Her sayfaya sabit bölümler eklemek için _TestLayout ve Admin Paneli 
 web ve web2 - Web sitesi temalarını içerir.
 
 
-## Domain
-Alan adı SOMEE.com web sitesinden alınmıştır.
-
-## Website Url
-Websitesine http://tatilseyahatrotasi.somee.com adresinden erişebilirsiniz.
-
-
 ## Website Hakkında Bilgiler
 'Ana Sayfa' sayfalarında Bloglarımız hakkında fotoğrafları ve bazı partial görünümleri görebilirsiniz.
 
