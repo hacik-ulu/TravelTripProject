@@ -1,39 +1,34 @@
 
-# Travel Trip Project
-Bu proje, Mvc teknolojisi kullanarak bir web sitesi oluşturmayı amaçlamaktadır.
+Travel Trip Project
+This project aims to create a website using MVC technology.
 
+Folders
+Controller - Contains files About.cs, Admin.cs, AddressBlog.cs, Blog.cs, BlogComment.cs, Comment.cs, CommentHotel.cs, Contact.cs, Home.cs, Hotel.cs, HotelComment.cs, and TravelTripContext.cs. All controllers include 'CRUD' and partial view operations.
 
+Views - Includes pages for basic 'CRUD' operations such as Index. It also has pages for viewing comments, partial views, and related pages for TakeHotel/Blog/Comment.
 
+Contents - Contains Bootstrap plugins.
 
-## Klasörler
-Controller - İçerisinde About.cs, Admin.cs, AdressBlog.cs, Blog.cs, BlogComment.cs, Comment.cs, CommentHotel.cs, Contact.cs, Home.cs, Hotel.cs, HotelComment.cs ve TravelTripContext.cs dosyalarını içerir. Tüm denetleyiciler 'CRUD' ve partialview işlemlerini içerir.
+Login - Contains the login homepage to authenticate users wanting access to a real Admin.
 
-Views - Temel 'CRUD' işlemleri hakkında Index ve sayfaları içerir. Ayrıca Comment, PartialView, TakeHotel/Blog/Comment ile ilgili sayfaları görüntülemek için aynı sayfalara sahiptir.
+Models/Classes - Contains database tables.
 
-Contents - Bootstrap eklentilerini içerir.
+Shared - Contains _TestLayout to add static sections to every page and _AdminLayout to organize static sections for the Admin Panel.
 
-Login - Gerçek bir Adminye erişmek isteyen kullanıcının kimliğini doğrulamak için giriş ana sayfasını içerir.
+web and web2 - Contain website themes.
 
-Modeller/Sınıflar - Veritabanı tablolarını içerir.
+Website Information
+On the 'Homepage', you can view photos about our Blogs and some partial views.
 
-Shared - Her sayfaya sabit bölümler eklemek için _TestLayout ve Admin Paneli sabit bölümlerini düzenlemek için _AdminLayout içerir.
+On the 'About Us' pages, you can see the underlying technologies used to create the website.
 
-web ve web2 - Web sitesi temalarını içerir.
+On the 'Hotels' pages, you can view our hotels, the 3 most recently added hotels, and the 5 most recent comments.
 
+On the 'Blogs' pages, you can view our blogs, the 3 most recently added blogs, and the 5 most recent comments.
 
-## Website Hakkında Bilgiler
-'Ana Sayfa' sayfalarında Bloglarımız hakkında fotoğrafları ve bazı partial görünümleri görebilirsiniz.
+On the 'Contact' pages, you can send an email or communicate your requests, suggestions, and complaints to the Admin.
 
-'Hakkımızda' sayfalarında web sitesini oluştururken kullanılan altyapı teknolojilerini görebilirsiniz.
-
-'Oteller' sayfalarında Otellerimizi, son eklenen 3 oteli ve son eklenen 5 yorumu görebilirsiniz.
-
-'Bloglar' sayfalarında Bloglarımızı, son eklenen 3 blogu ve son eklenen 5 yorumu görebilirsiniz.
-
-'İletişim' sayfalarında e-posta yazabilir veya taleplerinizi, önerilerinizi ve şikayetlerinizi Admine iletebilirsiniz.
-
-
-## Website Görüntüleri
+## Website Photos
 ![AnaSayfa(2)](https://github.com/hacik-ulu/TravelTripProject/assets/116976072/6167b2af-32d3-461f-9ba9-5d91f234aa3d)
 
 ![AnaSayfa(1)](https://github.com/hacik-ulu/TravelTripProject/assets/116976072/1024b963-c5e0-4024-9103-47daf28934ba)
